@@ -173,3 +173,19 @@ img {
   margin-left: 8px;
   text-decoration: line-through;
 }
+
+[data-animar] {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+[data-animar].visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(229, 9, 20, 0.35);
+  outline-offset: 3px;
+}
