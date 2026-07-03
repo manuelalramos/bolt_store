@@ -143,3 +143,23 @@ img {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+.estado-carregando, .estado-vazio {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  color: var(--cinza-escuro);
+  padding: 32px;
+  text-align: center;
+}
+
+.preco {
+  color: var(--preto);
+  font-weight: 700;
+}
+
+.preco-antigo {
+  color: var(--cinza-escuro);
+  font-size: 0.82rem;
+  margin-left: 8px;
+  text-decoration: line-through;
+}
