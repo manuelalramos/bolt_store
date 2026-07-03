@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Camisetas femininas e masculinas da Bolt Store." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Moletons | Bolt Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../assets/js/utilidades.js" defer></script>
+    <script src="../assets/js/menu.js" defer></script>
+    <script src="../assets/js/categoria.js" defer></script>
+  </head>
+  <body data-categoria-pagina="Camiseta" data-titulo-pagina="Camisetas">
+    <div class="barra-aviso">
+      <p>MOLETONS BOLT</p>
+      <a href="./carrinho.html">Ver carrinho <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <header class="cabecalho" id="inicio">
+      <div class="container cabecalho-conteudo">
+        <a class="logo" href="../index.html" aria-label="Pagina inicial da Bolt">
+          <img class="logo-imagem" src="../assets/media/logo_menu.svg" alt="Bolt Store" />
+        </a>
+        <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="menu" id="menu">
+          <a href="../index.html">Home</a>
+          <a href="./camisetas.html">Camisetas</a>
+          <a href="./calcas.html">Calcas</a>
+          <a href="./regatas.html">Regatas</a>
+          <a class="ativo" href="./moletons.html">Moletons</a>
+          <a href="./tops.html">Tops</a>
+          <a href="./shorts.html">Shorts</a>
+        </nav>
+        <a class="link-carrinho" href="./carrinho.html" aria-label="Abrir carrinho">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span data-contador-carrinho>0</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="categoria-hero">
+        <div class="container categoria-hero-conteudo" data-animar>
+          <p class="etiqueta">categoria</p>
+          <h1>Moletons</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestiae?</p>
+        </div>
+      </section>
+      <section class="secao produtos-secao">
+        <div class="container">
+          <div class="categoria-filtros" data-animar>
+            <div>
+              <button class="ativo" data-genero-categoria="Todos">Todos</button>
+              <button data-genero-categoria="Feminino">Feminino</button>
+              <button data-genero-categoria="Masculino">Masculino</button>
+            </div>
+            <p id="quantidade-categoria">Carregando...</p>
+          </div>
+          <div class="produtos-grade" id="lista-categoria"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container rodape-grade">
+        <div>
+          <a class="logo logo-rodape" href="../index.html">
+            <img class="logo-imagem" src="../assets/media/logo_bolt_branca.svg" alt="Bolt Store" />
+          </a>
+          <p>Loja virtual teen feita com JavaScript puro, HTML semantico e JSON Server.</p>
+        </div>
+        <nav aria-label="Navegacao do rodape">
+          <h2>Shop</h2>
+          <a href="./camisetas.html">Camisetas</a>
+          <a href="./calcas.html">Calcas</a>
+          <a href="./regatas.html">Regatas</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./carrinho.html">Carrinho</a>
+        </nav>
+        <div>
+          <h2>Newsletter</h2>
+          <p>Receba novidades da Bolt no seu e-mail.</p>
+          <form class="newsletter" data-newsletter-form novalidate>
+            <label for="newsletter-email">E-mail</label>
+            <div>
+              <input id="newsletter-email" name="email" type="email" placeholder="seuemail@email.com" />
+              <button type="submit" aria-label="Enviar newsletter">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <span data-newsletter-mensagem></span>
+          </form>
+        </div>
+      </div>
+      <div class="container rodape-final">
+        <p>&copy; <span id="ano"></span> Bolt Store. Todos os direitos reservados.</p>
+        <a class="made-by made-by-final" href="https://manuelalramos.com.br" target="_blank" rel="noopener">
+          Made by
+          <img src="../assets/media/icon_manuela.svg" alt="Manuela Ramos" />
+        </a>
+        <a href="#inicio" class="voltar-topo">Voltar ao topo <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
