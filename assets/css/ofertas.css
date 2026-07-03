@@ -1,0 +1,21 @@
+.faixa-oferta {
+  background: var(--preto);
+  color: var(--branco);
+}
+
+.oferta-caixa {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  min-height: 260px;
+  padding: 42px;
+}
+
+.oferta-caixa h2 {
+  font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 0.95;
+  max-width: 780px;
+  text-transform: uppercase;
+}
