@@ -1,0 +1,122 @@
+.produtos-secao {
+  background: var(--gelo);
+}
+
+.filtros-produtos {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.botoes-categoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.botoes-categoria button, .categoria-filtros button {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  color: var(--preto);
+  font-size: 0.72rem;
+  font-weight: 700;
+  min-height: 38px;
+  padding: 0 14px;
+  text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.botoes-categoria button.ativo, .botoes-categoria button:hover, .categoria-filtros button.ativo, .categoria-filtros button:hover {
+  background: var(--vermelho);
+  border-color: var(--vermelho);
+  color: var(--branco);
+  transform: translateY(-2px);
+}
+
+.filtros-linha {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.filtros-linha label {
+  color: var(--cinza-escuro);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filtros-linha input,
+.filtros-linha select {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  color: var(--preto);
+  min-height: 40px;
+  padding: 0 12px;
+}
+
+.produtos-grade {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.produto-card {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.produto-card:hover {
+  box-shadow: var(--sombra);
+  transform: translateY(-6px);
+}
+
+.produto-card-visual {
+  background: var(--gelo);
+  border-bottom: 1px solid var(--preto);
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.produto-card:hover .produto-card-visual {
+  background: var(--cinza);
+}
+
+.produto-card-corpo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.produto-meta {
+  color: var(--vermelho);
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.produto-card h3 {
+  font-size: 1rem;
+  line-height: 1.25;
+  min-height: 42px;
+}
+
+.produto-card-preco {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px 0 16px;
+}
+
+.produto-card .botao {
+  margin-top: auto;
+  min-height: 40px;
+  width: 100%;
+}
