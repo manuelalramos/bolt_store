@@ -2,147 +2,376 @@
   "produtos": [
     {
       "id": 1,
-      "nome": "Moletom Oversized Bolt",
+      "nome": "Moletom Oversized Preto",
       "categoria": "Moletom",
       "genero": "Masculino",
       "preco": 189.9,
       "precoAntigo": 229.9,
-      "descricao": "Moletom amplo, macio e facil de combinar com jeans ou bermuda.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Moletom preto oversized com capuz, estampa nas costas e caimento amplo para looks street.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": true,
-      "estoque": 12
+      "estoque": 12,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/moletom_oversized_1.jpg",
+          "alt": "Modelo de costas usando moletom oversized preto com estampa rosa"
+        },
+        {
+          "src": "assets/media/produtos/moletom_oversized_2.jpg",
+          "alt": "Modelo usando moletom oversized preto de frente"
+        },
+        {
+          "src": "assets/media/produtos/moletom_oversized_3.jpg",
+          "alt": "Detalhe do capuz e bordado frontal do moletom oversized preto"
+        }
+      ]
     },
     {
       "id": 2,
-      "nome": "Moletom Cropped Zip",
+      "nome": "Moletom Cropped Zip Vinho",
       "categoria": "Moletom",
       "genero": "Feminino",
       "preco": 169.9,
       "precoAntigo": 199.9,
-      "descricao": "Moletom cropped com ziper frontal e modelagem moderna.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Moletom cropped vinho com ziper frontal, capuz e modelagem ajustada na cintura.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": true,
-      "estoque": 10
+      "estoque": 10,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/moletom_cropped_1.jpg",
+          "alt": "Modelo usando moletom cropped vinho aberto"
+        },
+        {
+          "src": "assets/media/produtos/moletom_cropped_2.jpg",
+          "alt": "Vista de costas do moletom cropped vinho com capuz"
+        },
+        {
+          "src": "assets/media/produtos/moletom_cropped_3.jpg",
+          "alt": "Look completo com moletom cropped vinho e calca ampla"
+        }
+      ]
     },
     {
       "id": 3,
-      "nome": "Moletom College Black",
+      "nome": "Conjunto Moletom College Vinho",
       "categoria": "Moletom",
       "genero": "Feminino",
       "preco": 179.9,
       "precoAntigo": 0,
-      "descricao": "Moletom com gola alta, punhos largos e visual college.",
-      "tamanhos": ["P", "M", "G"],
+      "descricao": "Conjunto de moletom vinho com capuz amplo, calca reta e estampa college nas costas.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": false,
-      "estoque": 8
+      "estoque": 8,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/moletom_college_1.jpg",
+          "alt": "Vista de costas do conjunto moletom college vinho"
+        },
+        {
+          "src": "assets/media/produtos/moletom_college_2.jpg",
+          "alt": "Modelo usando conjunto moletom college vinho completo"
+        },
+        {
+          "src": "assets/media/produtos/moletom_college_3.jpg",
+          "alt": "Detalhe frontal do conjunto moletom college vinho"
+        }
+      ]
     },
     {
       "id": 4,
-      "nome": "Moletom Basic Chumbo",
+      "nome": "Moletom Graffiti Cinza",
       "categoria": "Moletom",
       "genero": "Masculino",
       "preco": 159.9,
       "precoAntigo": 0,
-      "descricao": "Moletom basico com capuz, bolso frontal e tecido confortavel.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Moletom cinza com capuz, bolso frontal e estampa graffiti para compor visual urbano.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": false,
-      "estoque": 15
+      "estoque": 15,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/moletom_basic_1.jpg",
+          "alt": "Modelo usando moletom cinza com estampa graffiti"
+        },
+        {
+          "src": "assets/media/produtos/moletom_basic_2.jpg",
+          "alt": "Vista de costas do moletom cinza com capuz"
+        },
+        {
+          "src": "assets/media/produtos/moletom_basic_3.jpg",
+          "alt": "Detalhe frontal da estampa graffiti no moletom cinza"
+        }
+      ]
     },
     {
       "id": 5,
-      "nome": "Calca Jeans Wide",
+      "nome": "Calca Jeans Wide Clara",
       "categoria": "Calca jeans",
       "genero": "Feminino",
       "preco": 219.9,
       "precoAntigo": 259.9,
-      "descricao": "Calca jeans wide leg com cintura alta e lavagem azul media.",
-      "tamanhos": ["36", "38", "40", "42"],
+      "descricao": "Calca jeans wide leg em lavagem clara, cintura baixa e perna ampla para looks soltos.",
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
       "destaque": true,
-      "estoque": 11
+      "estoque": 11,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/calca_wide_leg_1.jpg",
+          "alt": "Modelo usando calca jeans wide clara de frente"
+        },
+        {
+          "src": "assets/media/produtos/calca_wide_leg_2.jpg",
+          "alt": "Vista lateral e de costas da calca jeans wide clara"
+        },
+        {
+          "src": "assets/media/produtos/calca_wide_leg_3.jpg",
+          "alt": "Detalhe do cos da calca jeans wide clara"
+        }
+      ]
     },
     {
       "id": 6,
-      "nome": "Calca Jeans Reta",
+      "nome": "Calca Jeans Reta Preta",
       "categoria": "Calca jeans",
       "genero": "Masculino",
       "preco": 199.9,
       "precoAntigo": 0,
-      "descricao": "Jeans reto de uso diario, com caimento classico e confortavel.",
-      "tamanhos": ["38", "40", "42", "44"],
+      "descricao": "Calca jeans preta de corte reto, visual limpo e caimento facil para o dia a dia.",
+      "tamanhos": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
       "destaque": false,
-      "estoque": 14
+      "estoque": 14,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/calca_reta_1.jpg",
+          "alt": "Modelo usando calca jeans reta preta de frente"
+        },
+        {
+          "src": "assets/media/produtos/calca_reta_2.jpg",
+          "alt": "Vista de costas da calca jeans reta preta"
+        },
+        {
+          "src": "assets/media/produtos/calca_reta_3.jpg",
+          "alt": "Detalhe da calca jeans reta preta com look escuro"
+        }
+      ]
     },
     {
       "id": 7,
-      "nome": "Calca Jeans Cargo",
+      "nome": "Calca Cargo Wide Preta",
       "categoria": "Calca jeans",
       "genero": "Masculino",
       "preco": 229.9,
       "precoAntigo": 269.9,
-      "descricao": "Jeans cargo com bolsos laterais e acabamento urbano.",
-      "tamanhos": ["38", "40", "42", "44", "46"],
+      "descricao": "Calca cargo preta com bolsos laterais, perna ampla e acabamento utilitario.",
+      "tamanhos": [
+        "38",
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
       "destaque": true,
-      "estoque": 9
+      "estoque": 9,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/calca_cargo_1.jpg",
+          "alt": "Modelo usando calca cargo wide preta de frente"
+        },
+        {
+          "src": "assets/media/produtos/calca_cargo_2.jpg",
+          "alt": "Vista de costas da calca cargo wide preta"
+        },
+        {
+          "src": "assets/media/produtos/calca_cargo_3.jpg",
+          "alt": "Detalhe dos bolsos laterais da calca cargo preta"
+        }
+      ]
     },
     {
       "id": 8,
-      "nome": "Calca Jeans Mom",
+      "nome": "Calca Jeans Mom Clara",
       "categoria": "Calca jeans",
       "genero": "Feminino",
       "preco": 209.9,
       "precoAntigo": 0,
-      "descricao": "Jeans mom com cintura alta, barra reta e visual casual.",
-      "tamanhos": ["34", "36", "38", "40", "42"],
+      "descricao": "Calca jeans mom em lavagem clara, cintura alta e barra reta para looks casuais.",
+      "tamanhos": [
+        "34",
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
       "destaque": false,
-      "estoque": 13
+      "estoque": 13,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/calca_mom_1.jpg",
+          "alt": "Modelo usando calca jeans mom clara de frente"
+        },
+        {
+          "src": "assets/media/produtos/calca_mom_2.jpg",
+          "alt": "Vista de costas da calca jeans mom clara"
+        },
+        {
+          "src": "assets/media/produtos/calca_mom_3.jpg",
+          "alt": "Detalhe do cos e bolso da calca jeans mom clara"
+        }
+      ]
     },
     {
       "id": 9,
-      "nome": "Camiseta Boxy Bolt",
+      "nome": "Camiseta Boxy Preta",
       "categoria": "Camiseta",
-      "genero": "Feminino",
+      "genero": "Masculino",
       "preco": 79.9,
       "precoAntigo": 99.9,
-      "descricao": "Camiseta boxy com algodao leve e estampa pequena no peito.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Camiseta preta boxy com manga ampla, caimento oversized e visual minimalista.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": true,
-      "estoque": 18
+      "estoque": 18,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/camiseta_boxy_bolt_1.jpg",
+          "alt": "Modelo usando camiseta boxy preta de frente"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_boxy_bolt_2.jpg",
+          "alt": "Vista de costas da camiseta boxy preta"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_boxy_bolt_3.jpg",
+          "alt": "Detalhe da camiseta boxy preta em look urbano"
+        }
+      ]
     },
     {
       "id": 10,
-      "nome": "Camiseta Essential",
+      "nome": "Camiseta Off White Graphic",
       "categoria": "Camiseta",
       "genero": "Masculino",
       "preco": 69.9,
       "precoAntigo": 0,
-      "descricao": "Camiseta lisa com gola redonda e modelagem regular.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Camiseta off white com modelagem regular e estampa grafica grande nas costas.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": false,
-      "estoque": 20
+      "estoque": 20,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/camiseta_essential_1.jpg",
+          "alt": "Detalhe da estampa nas costas da camiseta off white"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_essential_2.jpg",
+          "alt": "Modelo usando camiseta off white de frente"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_essential_3.jpg",
+          "alt": "Vista de costas da camiseta off white com estampa grafica"
+        }
+      ]
     },
     {
       "id": 11,
-      "nome": "Camiseta Baby Look",
+      "nome": "Baby Look Azul Marinho",
       "categoria": "Camiseta",
       "genero": "Feminino",
       "preco": 74.9,
       "precoAntigo": 0,
-      "descricao": "Baby look canelada, justa ao corpo e com toque macio.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Baby look azul marinho com manga curta, toque ajustado e comprimento cropped.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": false,
-      "estoque": 16
+      "estoque": 16,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/camiseta_baby_look_1.jpg",
+          "alt": "Modelo usando baby look azul marinho de frente"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_baby_look_2.jpg",
+          "alt": "Vista lateral e de costas da baby look azul marinho"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_baby_look_3.jpg",
+          "alt": "Detalhe frontal da baby look azul marinho"
+        }
+      ]
     },
     {
       "id": 12,
-      "nome": "Camiseta Street Logo",
+      "nome": "Camiseta Street Logo Off White",
       "categoria": "Camiseta",
       "genero": "Masculino",
       "preco": 89.9,
       "precoAntigo": 109.9,
-      "descricao": "Camiseta street com estampa central e caimento levemente amplo.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Camiseta off white de caimento solto com estampa street nas costas.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": true,
-      "estoque": 17
+      "estoque": 17,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/camiseta_street_logo_1.jpg",
+          "alt": "Modelo usando camiseta street off white de frente"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_street_logo_2.jpg",
+          "alt": "Vista de costas da camiseta street off white com logo"
+        },
+        {
+          "src": "assets/media/produtos/camiseta_street_logo_3.jpg",
+          "alt": "Modelo usando camiseta street off white em look casual"
+        }
+      ]
     },
     {
       "id": 13,
@@ -151,142 +380,370 @@
       "genero": "Feminino",
       "preco": 59.9,
       "precoAntigo": 79.9,
-      "descricao": "Regata canelada com alcas finas e visual minimalista.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Regata preta canelada com cava tradicional e ajuste ao corpo.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": true,
-      "estoque": 18
+      "estoque": 18,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/regata_rib_1.jpg",
+          "alt": "Modelo usando regata rib preta de frente"
+        },
+        {
+          "src": "assets/media/produtos/regata_rib_2.jpg",
+          "alt": "Vista de costas da regata rib preta"
+        },
+        {
+          "src": "assets/media/produtos/regata_rib_3.jpg",
+          "alt": "Look completo com regata rib preta"
+        }
+      ]
     },
     {
       "id": 14,
-      "nome": "Regata Muscle",
+      "nome": "Regata Muscle Preta",
       "categoria": "Regata",
       "genero": "Masculino",
       "preco": 64.9,
       "precoAntigo": 0,
-      "descricao": "Regata muscle com cava larga e algodao estruturado.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Regata preta muscle com cava marcada, malha ajustada e visual esportivo.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": false,
-      "estoque": 19
+      "estoque": 19,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/regata_muscle_1.jpg",
+          "alt": "Modelo usando regata muscle preta de frente"
+        },
+        {
+          "src": "assets/media/produtos/regata_muscle_2.jpg",
+          "alt": "Vista de costas da regata muscle preta"
+        },
+        {
+          "src": "assets/media/produtos/regata_muscle_3.jpg",
+          "alt": "Detalhe frontal da regata muscle preta"
+        }
+      ]
     },
     {
       "id": 15,
-      "nome": "Regata Basica Cotton",
+      "nome": "Regata Cotton Azul Marinho",
       "categoria": "Regata",
       "genero": "Feminino",
       "preco": 54.9,
       "precoAntigo": 0,
-      "descricao": "Regata basica para usar sozinha ou por baixo de camisa aberta.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Regata azul marinho com alcas finas em contraste e comprimento levemente cropped.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": false,
-      "estoque": 22
+      "estoque": 22,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/regata_cotton_1.jpg",
+          "alt": "Modelo usando regata cotton azul marinho de frente"
+        },
+        {
+          "src": "assets/media/produtos/regata_cotton_2.jpg",
+          "alt": "Vista de costas da regata cotton azul marinho"
+        },
+        {
+          "src": "assets/media/produtos/regata_cotton_3.jpg",
+          "alt": "Look completo com regata cotton azul marinho e jeans"
+        }
+      ]
     },
     {
       "id": 16,
-      "nome": "Regata Sport Bolt",
+      "nome": "Regata Sport Branca",
       "categoria": "Regata",
       "genero": "Masculino",
       "preco": 69.9,
       "precoAntigo": 89.9,
-      "descricao": "Regata esportiva leve para looks de treino e rua.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Regata branca sem mangas com cava ampla e caimento leve para treino ou rua.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": true,
-      "estoque": 15
+      "estoque": 15,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/regata_sport_1.jpg",
+          "alt": "Modelo usando regata sport branca de frente"
+        },
+        {
+          "src": "assets/media/produtos/regata_sport_2.jpg",
+          "alt": "Vista de costas da regata sport branca"
+        },
+        {
+          "src": "assets/media/produtos/regata_sport_3.jpg",
+          "alt": "Look branco completo com regata sport"
+        }
+      ]
     },
     {
       "id": 17,
-      "nome": "Top Canelado Basic",
+      "nome": "Top de Alcas Preto",
       "categoria": "Top",
       "genero": "Feminino",
       "preco": 69.9,
       "precoAntigo": 0,
-      "descricao": "Top canelado com sustentacao leve e alcas confortaveis.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Top preto de alcas finas com decote em V e barra soltinha para looks leves.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": false,
-      "estoque": 16
+      "estoque": 16,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/top_alcas_1.jpg",
+          "alt": "Modelo usando top preto de alcas finas"
+        },
+        {
+          "src": "assets/media/produtos/top_alcas_2.jpg",
+          "alt": "Vista de costas do top preto de alcas"
+        },
+        {
+          "src": "assets/media/produtos/top_alcas_3.jpg",
+          "alt": "Look completo com top preto de alcas e bermuda clara"
+        }
+      ]
     },
     {
       "id": 18,
-      "nome": "Top Faixa Minimal",
+      "nome": "Top Faixa Preto",
       "categoria": "Top",
       "genero": "Feminino",
       "preco": 74.9,
       "precoAntigo": 94.9,
-      "descricao": "Top faixa com acabamento limpo, ideal para sobreposicoes.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Top faixa preto sem alcas, justo ao corpo e facil de combinar com jeans.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": true,
-      "estoque": 12
+      "estoque": 12,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/top_faixa_1.jpg",
+          "alt": "Modelo usando top faixa preto de frente"
+        },
+        {
+          "src": "assets/media/produtos/top_faixa_2.jpg",
+          "alt": "Vista de costas do top faixa preto"
+        },
+        {
+          "src": "assets/media/produtos/top_faixa_3.jpg",
+          "alt": "Vista lateral do top faixa preto"
+        }
+      ]
     },
     {
       "id": 19,
-      "nome": "Top Alca Dupla",
+      "nome": "Top Halter Preto",
       "categoria": "Top",
       "genero": "Feminino",
       "preco": 82.9,
       "precoAntigo": 0,
-      "descricao": "Top com alca dupla e tecido firme para compor looks modernos.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Top halter preto com amarracao nas costas e recorte moderno na cintura.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": false,
-      "estoque": 11
+      "estoque": 11,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/top_halter_1.jpg",
+          "alt": "Modelo usando top halter preto em look monocromatico"
+        },
+        {
+          "src": "assets/media/produtos/top_halter_2.jpg",
+          "alt": "Vista de costas do top halter preto com amarracao"
+        },
+        {
+          "src": "assets/media/produtos/top_halter_3.jpg",
+          "alt": "Detalhe frontal do top halter preto"
+        }
+      ]
     },
     {
       "id": 20,
-      "nome": "Top Sport Recorte",
+      "nome": "Top Malha Um Ombro",
       "categoria": "Top",
       "genero": "Feminino",
       "preco": 89.9,
       "precoAntigo": 109.9,
-      "descricao": "Top esportivo com recorte frontal e toque macio.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Top preto de um ombro so, em malha macia e caimento assimetrico.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": true,
-      "estoque": 10
+      "estoque": 10,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/top_malha_1.jpg",
+          "alt": "Modelo usando top preto de um ombro so"
+        },
+        {
+          "src": "assets/media/produtos/top_malha_2.jpg",
+          "alt": "Vista de costas do top preto de um ombro"
+        },
+        {
+          "src": "assets/media/produtos/top_malha_3.jpg",
+          "alt": "Detalhe do decote assimetrico do top preto"
+        }
+      ]
     },
     {
       "id": 21,
-      "nome": "Shorts Jeans Cargo",
+      "nome": "Bermuda Sarja Bege",
       "categoria": "Shorts",
       "genero": "Masculino",
       "preco": 129.9,
       "precoAntigo": 0,
-      "descricao": "Shorts jeans com bolsos laterais e visual street.",
-      "tamanhos": ["38", "40", "42", "44"],
+      "descricao": "Bermuda masculina bege em sarja, comprimento acima do joelho e visual casual.",
+      "tamanhos": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
       "destaque": false,
-      "estoque": 14
+      "estoque": 14,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/bermuda_masculina_1.jpg",
+          "alt": "Modelo usando bermuda masculina bege em look casual"
+        },
+        {
+          "src": "assets/media/produtos/bermuda_masculina_2.jpg",
+          "alt": "Detalhe da bermuda masculina bege com camisa aberta"
+        },
+        {
+          "src": "assets/media/produtos/bermuda_masculina_3.jpg",
+          "alt": "Look completo com bermuda masculina bege"
+        }
+      ]
     },
     {
       "id": 22,
-      "nome": "Shorts High Waist",
+      "nome": "Bermuda Baggy Jeans Clara",
       "categoria": "Shorts",
       "genero": "Feminino",
       "preco": 119.9,
       "precoAntigo": 0,
-      "descricao": "Shorts cintura alta com caimento moderno e barra reta.",
-      "tamanhos": ["34", "36", "38", "40"],
+      "descricao": "Bermuda jeans clara em modelagem baggy, cintura baixa e perna ampla.",
+      "tamanhos": [
+        "34",
+        "36",
+        "38",
+        "40"
+      ],
       "destaque": false,
-      "estoque": 18
+      "estoque": 18,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/bermuda_feminina_baggy_1.jpg",
+          "alt": "Modelo usando bermuda baggy jeans clara de frente"
+        },
+        {
+          "src": "assets/media/produtos/bermuda_feminina_baggy_2.jpg",
+          "alt": "Vista de costas da bermuda baggy jeans clara"
+        },
+        {
+          "src": "assets/media/produtos/bermuda_feminina_baggy_3.jpg",
+          "alt": "Detalhe frontal da bermuda baggy jeans clara"
+        }
+      ]
     },
     {
       "id": 23,
-      "nome": "Shorts Moletom Bolt",
+      "nome": "Bermuda Moletom Preta",
       "categoria": "Shorts",
       "genero": "Masculino",
       "preco": 99.9,
       "precoAntigo": 129.9,
-      "descricao": "Shorts de moletom com elastico, cordao e bolso lateral.",
-      "tamanhos": ["P", "M", "G", "GG"],
+      "descricao": "Bermuda preta de moletom com caimento reto, bolsos laterais e visual street.",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
       "destaque": true,
-      "estoque": 20
+      "estoque": 20,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/shorts_moletom_1.jpg",
+          "alt": "Modelo usando bermuda preta de moletom de frente"
+        },
+        {
+          "src": "assets/media/produtos/shorts_moletom_2.jpg",
+          "alt": "Vista lateral da bermuda preta de moletom"
+        },
+        {
+          "src": "assets/media/produtos/shorts_moletom_4.jpg",
+          "alt": "Detalhe da bermuda preta de moletom"
+        }
+      ]
     },
     {
       "id": 24,
-      "nome": "Shorts Saia Minimal",
+      "nome": "Saia Midi Branca",
       "categoria": "Shorts",
       "genero": "Feminino",
       "preco": 109.9,
       "precoAntigo": 139.9,
-      "descricao": "Shorts saia com visual limpo para looks casuais.",
-      "tamanhos": ["PP", "P", "M", "G"],
+      "descricao": "Saia midi branca com volume leve, recortes em camadas e movimento amplo.",
+      "tamanhos": [
+        "PP",
+        "P",
+        "M",
+        "G"
+      ],
       "destaque": true,
-      "estoque": 17
+      "estoque": 17,
+      "imagens": [
+        {
+          "src": "assets/media/produtos/saia_midi_1.jpg",
+          "alt": "Modelo usando saia midi branca de frente"
+        },
+        {
+          "src": "assets/media/produtos/saia_midi_2.jpg",
+          "alt": "Vista de costas da saia midi branca"
+        },
+        {
+          "src": "assets/media/produtos/saia_midi_3.jpg",
+          "alt": "Look completo com saia midi branca em movimento"
+        }
+      ]
     }
   ]
 }
