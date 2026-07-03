@@ -40,7 +40,17 @@
   border: 1px solid var(--preto);
   display: flex;
   height: 132px;
-  padding: 10px;
+  overflow: hidden;
+}
+
+.item-imagem {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.item-imagem:not([src]) {
+  visibility: hidden;
 }
 
 .item-carrinho h2 {
