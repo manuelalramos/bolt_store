@@ -25,11 +25,45 @@
   transform: translateY(-6px);
 }
 
+.categoria-card-imagem {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  opacity: 0.72;
+  position: absolute;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  width: 100%;
+}
+
+.categoria-card-imagem:not([src]) {
+  visibility: hidden;
+}
+
+.categoria-card::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.36));
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.categoria-card:hover .categoria-card-imagem {
+  opacity: 0.46;
+  transform: scale(1.04);
+}
+
+.categoria-card:hover::after {
+  opacity: 1;
+}
+
 .categoria-card i {
   color: var(--vermelho);
   font-size: 2rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .categoria-card:hover i {
@@ -43,5 +77,5 @@
   line-height: 0.92;
   position: relative;
   text-transform: uppercase;
-  z-index: 1;
+  z-index: 2;
 }
