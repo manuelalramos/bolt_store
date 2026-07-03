@@ -16,9 +16,9 @@ function mostrarCarrinho() {
   if (carrinho.length === 0) {
     listaCarrinho.innerHTML =
       '<article class="carrinho-vazio" data-animar>' +
-        "<h2>Carrinho vazio</h2>" +
-        "<p>Escolha uma peca da vitrine para montar seu pedido.</p>" +
-        '<a class="botao" href="../index.html#produtos">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>' +
+        "<h2>Seu carrinho está vazio</h2>" +
+        "<p>Escolha uma peça da vitrine para começar seu look.</p>" +
+        '<a class="botao" href="../index.html#produtos">Ver vitrine <i class="fa-solid fa-arrow-right"></i></a>' +
       "</article>";
   } else {
     listaCarrinho.innerHTML = carrinho.map(criarItemCarrinho).join("");
@@ -69,15 +69,15 @@ function atualizarResumo(carrinho) {
   const total = subtotal + frete;
 
   campoSubtotal.textContent = formatarPreco(subtotal);
-  campoFrete.textContent = subtotal === 0 ? formatarPreco(0) : frete === 0 ? "Gratis" : formatarPreco(frete);
+  campoFrete.textContent = subtotal === 0 ? formatarPreco(0) : frete === 0 ? "Grátis" : formatarPreco(frete);
   campoTotal.textContent = formatarPreco(total);
 
   if (subtotal === 0) {
-    mensagemFrete.textContent = "Adicione produtos para calcular o frete.";
+    mensagemFrete.textContent = "Adicione uma peça para calcular o frete.";
   } else if (subtotal >= limiteFreteGratis) {
-    mensagemFrete.textContent = "Seu pedido ganhou frete gratis.";
+    mensagemFrete.textContent = "Seu pedido ganhou frete grátis.";
   } else {
-    mensagemFrete.textContent = "Faltam " + formatarPreco(limiteFreteGratis - subtotal) + " para ganhar frete gratis.";
+    mensagemFrete.textContent = "Faltam " + formatarPreco(limiteFreteGratis - subtotal) + " para ganhar frete grátis.";
   }
 }
 
@@ -128,14 +128,14 @@ botaoFinalizar.addEventListener("click", function () {
   const carrinho = lerCarrinho();
 
   if (carrinho.length === 0) {
-    mensagemFinalizacao.textContent = "Adicione um produto antes de finalizar.";
+    mensagemFinalizacao.textContent = "Adicione uma peça antes de finalizar.";
     return;
   }
 
   localStorage.removeItem(NOME_CARRINHO);
   atualizarQuantidadeCarrinho();
   mostrarCarrinho();
-  mensagemFinalizacao.textContent = "Pedido finalizado com sucesso.";
+  mensagemFinalizacao.textContent = "Pedido finalizado. Seu look já está separado.";
 });
 
 iniciarCarrinho();

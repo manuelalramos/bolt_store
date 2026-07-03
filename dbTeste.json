@@ -38,7 +38,7 @@
       "genero": "Feminino",
       "preco": 169.9,
       "precoAntigo": 199.9,
-      "descricao": "Moletom cropped vinho com ziper frontal, capuz e modelagem ajustada na cintura.",
+      "descricao": "Moletom cropped vinho com zíper frontal, capuz e modelagem ajustada na cintura.",
       "tamanhos": [
         "PP",
         "P",
@@ -58,7 +58,7 @@
         },
         {
           "src": "assets/media/produtos/moletom_cropped_3.jpg",
-          "alt": "Look completo com moletom cropped vinho e calca ampla"
+          "alt": "Look completo com moletom cropped vinho e calça ampla"
         }
       ]
     },
@@ -69,7 +69,7 @@
       "genero": "Feminino",
       "preco": 179.9,
       "precoAntigo": 0,
-      "descricao": "Conjunto de moletom vinho com capuz amplo, calca reta e estampa college nas costas.",
+      "descricao": "Conjunto de moletom vinho com capuz amplo, calça reta e estampa college nas costas.",
       "tamanhos": [
         "P",
         "M",
@@ -125,12 +125,12 @@
     },
     {
       "id": 5,
-      "nome": "Calca Jeans Wide Clara",
+      "nome": "Calça Jeans Wide Clara",
       "categoria": "Calca jeans",
       "genero": "Feminino",
       "preco": 219.9,
       "precoAntigo": 259.9,
-      "descricao": "Calca jeans wide leg em lavagem clara, cintura baixa e perna ampla para looks soltos.",
+      "descricao": "Calça jeans wide leg em lavagem clara, cintura baixa e perna ampla para looks soltos.",
       "tamanhos": [
         "36",
         "38",
@@ -142,26 +142,26 @@
       "imagens": [
         {
           "src": "assets/media/produtos/calca_wide_leg_1.jpg",
-          "alt": "Modelo usando calca jeans wide clara de frente"
+          "alt": "Modelo usando calça jeans wide clara de frente"
         },
         {
           "src": "assets/media/produtos/calca_wide_leg_2.jpg",
-          "alt": "Vista lateral e de costas da calca jeans wide clara"
+          "alt": "Vista lateral e de costas da calça jeans wide clara"
         },
         {
           "src": "assets/media/produtos/calca_wide_leg_3.jpg",
-          "alt": "Detalhe do cos da calca jeans wide clara"
+          "alt": "Detalhe do cós da calça jeans wide clara"
         }
       ]
     },
     {
       "id": 6,
-      "nome": "Calca Jeans Reta Preta",
+      "nome": "Calça Jeans Reta Preta",
       "categoria": "Calca jeans",
       "genero": "Masculino",
       "preco": 199.9,
       "precoAntigo": 0,
-      "descricao": "Calca jeans preta de corte reto, visual limpo e caimento facil para o dia a dia.",
+      "descricao": "Calça jeans preta de corte reto, visual limpo e caimento fácil para o dia a dia.",
       "tamanhos": [
         "38",
         "40",
@@ -173,26 +173,26 @@
       "imagens": [
         {
           "src": "assets/media/produtos/calca_reta_1.jpg",
-          "alt": "Modelo usando calca jeans reta preta de frente"
+          "alt": "Modelo usando calça jeans reta preta de frente"
         },
         {
           "src": "assets/media/produtos/calca_reta_2.jpg",
-          "alt": "Vista de costas da calca jeans reta preta"
+          "alt": "Vista de costas da calça jeans reta preta"
         },
         {
           "src": "assets/media/produtos/calca_reta_3.jpg",
-          "alt": "Detalhe da calca jeans reta preta com look escuro"
+          "alt": "Detalhe da calça jeans reta preta com look escuro"
         }
       ]
     },
     {
       "id": 7,
-      "nome": "Calca Cargo Wide Preta",
+      "nome": "Calça Cargo Wide Preta",
       "categoria": "Calca jeans",
       "genero": "Masculino",
       "preco": 229.9,
       "precoAntigo": 269.9,
-      "descricao": "Calca cargo preta com bolsos laterais, perna ampla e acabamento utilitario.",
+      "descricao": "Calça cargo preta com bolsos laterais, perna ampla e acabamento utilitário.",
       "tamanhos": [
         "38",
         "40",
@@ -205,26 +205,26 @@
       "imagens": [
         {
           "src": "assets/media/produtos/calca_cargo_1.jpg",
-          "alt": "Modelo usando calca cargo wide preta de frente"
+          "alt": "Modelo usando calça cargo wide preta de frente"
         },
         {
           "src": "assets/media/produtos/calca_cargo_2.jpg",
-          "alt": "Vista de costas da calca cargo wide preta"
+          "alt": "Vista de costas da calça cargo wide preta"
         },
         {
           "src": "assets/media/produtos/calca_cargo_3.jpg",
-          "alt": "Detalhe dos bolsos laterais da calca cargo preta"
+          "alt": "Detalhe dos bolsos laterais da calça cargo preta"
         }
       ]
     },
     {
       "id": 8,
-      "nome": "Calca Jeans Mom Clara",
+      "nome": "Calça Jeans Mom Clara",
       "categoria": "Calca jeans",
       "genero": "Feminino",
       "preco": 209.9,
       "precoAntigo": 0,
-      "descricao": "Calca jeans mom em lavagem clara, cintura alta e barra reta para looks casuais.",
+      "descricao": "Calça jeans mom em lavagem clara, cintura alta e barra reta para looks casuais.",
       "tamanhos": [
         "34",
         "36",
@@ -237,15 +237,15 @@
       "imagens": [
         {
           "src": "assets/media/produtos/calca_mom_1.jpg",
-          "alt": "Modelo usando calca jeans mom clara de frente"
+          "alt": "Modelo usando calça jeans mom clara de frente"
         },
         {
           "src": "assets/media/produtos/calca_mom_2.jpg",
-          "alt": "Vista de costas da calca jeans mom clara"
+          "alt": "Vista de costas da calça jeans mom clara"
         },
         {
           "src": "assets/media/produtos/calca_mom_3.jpg",
-          "alt": "Detalhe do cos e bolso da calca jeans mom clara"
+          "alt": "Detalhe do cós e bolso da calça jeans mom clara"
         }
       ]
     },
@@ -442,7 +442,7 @@
       "genero": "Feminino",
       "preco": 54.9,
       "precoAntigo": 0,
-      "descricao": "Regata azul marinho com alcas finas em contraste e comprimento levemente cropped.",
+      "descricao": "Regata azul marinho com alças finas em contraste e comprimento levemente cropped.",
       "tamanhos": [
         "PP",
         "P",
@@ -499,12 +499,12 @@
     },
     {
       "id": 17,
-      "nome": "Top de Alcas Preto",
+      "nome": "Top de Alças Preto",
       "categoria": "Top",
       "genero": "Feminino",
       "preco": 69.9,
       "precoAntigo": 0,
-      "descricao": "Top preto de alcas finas com decote em V e barra soltinha para looks leves.",
+      "descricao": "Top preto de alças finas com decote em V e barra soltinha para looks leves.",
       "tamanhos": [
         "PP",
         "P",
@@ -516,15 +516,15 @@
       "imagens": [
         {
           "src": "assets/media/produtos/top_alcas_1.jpg",
-          "alt": "Modelo usando top preto de alcas finas"
+          "alt": "Modelo usando top preto de alças finas"
         },
         {
           "src": "assets/media/produtos/top_alcas_2.jpg",
-          "alt": "Vista de costas do top preto de alcas"
+          "alt": "Vista de costas do top preto de alças"
         },
         {
           "src": "assets/media/produtos/top_alcas_3.jpg",
-          "alt": "Look completo com top preto de alcas e bermuda clara"
+          "alt": "Look completo com top preto de alças e bermuda clara"
         }
       ]
     },
@@ -535,7 +535,7 @@
       "genero": "Feminino",
       "preco": 74.9,
       "precoAntigo": 94.9,
-      "descricao": "Top faixa preto sem alcas, justo ao corpo e facil de combinar com jeans.",
+      "descricao": "Top faixa preto sem alças, justo ao corpo e fácil de combinar com jeans.",
       "tamanhos": [
         "PP",
         "P",
@@ -597,7 +597,7 @@
       "genero": "Feminino",
       "preco": 89.9,
       "precoAntigo": 109.9,
-      "descricao": "Top preto de um ombro so, em malha macia e caimento assimetrico.",
+      "descricao": "Top preto de um ombro so, em malha macia e caimento assimétrico.",
       "tamanhos": [
         "PP",
         "P",
@@ -617,7 +617,7 @@
         },
         {
           "src": "assets/media/produtos/top_malha_3.jpg",
-          "alt": "Detalhe do decote assimetrico do top preto"
+          "alt": "Detalhe do decote assimétrico do top preto"
         }
       ]
     },

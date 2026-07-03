@@ -15,7 +15,7 @@ async function iniciarPaginaProduto() {
   });
 
   if (!produtoAtual) {
-    areaProduto.innerHTML = '<div class="estado-vazio">Produto nao encontrado.</div>';
+    areaProduto.innerHTML = '<div class="estado-vazio">Essa peça não foi encontrada na vitrine.</div>';
     areaRelacionados.innerHTML = "";
     return;
   }
@@ -36,7 +36,7 @@ function mostrarProduto(produto) {
   areaProduto.innerHTML =
     criarGaleriaProduto(produto) +
     '<article class="produto-info" data-animar>' +
-      '<p class="produto-meta">' + produto.categoria + " / " + produto.genero + "</p>" +
+      '<p class="produto-meta">' + formatarCategoria(produto.categoria) + " / " + produto.genero + "</p>" +
       "<h1>" + produto.nome + "</h1>" +
       '<div class="produto-precos">' +
         '<span class="preco">' + formatarPreco(produto.preco) + "</span>" +
@@ -44,7 +44,7 @@ function mostrarProduto(produto) {
       "</div>" +
       '<p class="descricao">' + produto.descricao + "</p>" +
       '<div class="opcoes-bloco">' +
-        "<p>Selecione o tamanho</p>" +
+        "<p>Escolha seu tamanho</p>" +
         '<div class="opcoes-lista" id="lista-tamanhos"></div>' +
       "</div>" +
       '<button class="botao botao-largo" id="botao-adicionar">Adicionar ao carrinho <i class="fa-solid fa-cart-plus"></i></button>' +
@@ -52,15 +52,15 @@ function mostrarProduto(produto) {
       '<div class="produto-detalhes">' +
         "<details open>" +
           "<summary>Detalhes</summary>" +
-          "<p>Peca com caimento moderno, pensada para looks teen e uso no dia a dia.</p>" +
+          "<p>Peça selecionada para compor looks urbanos, com caimento atual e fácil de combinar.</p>" +
         "</details>" +
         "<details>" +
           "<summary>Entrega</summary>" +
-          "<p>O prazo aparece no fechamento do pedido. Frete gratis acima de R$ 299,00.</p>" +
+          "<p>O prazo aparece no fechamento do pedido. Frete grátis em compras acima de R$ 300,00.</p>" +
         "</details>" +
         "<details>" +
           "<summary>Trocas</summary>" +
-          "<p>Voce pode solicitar troca caso o tamanho nao fique ideal.</p>" +
+          "<p>Se o tamanho não ficar perfeito, você pode solicitar troca de forma simples.</p>" +
         "</details>" +
       "</div>" +
     "</article>";
@@ -95,7 +95,7 @@ function criarGaleriaProduto(produto) {
       '<div class="produto-galeria-controles" aria-label="Galeria de imagens do produto">' +
         '<button type="button" data-galeria="anterior" aria-label="Imagem anterior"><i class="fa-solid fa-arrow-left"></i></button>' +
         '<div class="produto-miniaturas">' + miniaturas + "</div>" +
-        '<button type="button" data-galeria="proxima" aria-label="Proxima imagem"><i class="fa-solid fa-arrow-right"></i></button>' +
+        '<button type="button" data-galeria="proxima" aria-label="Próxima imagem"><i class="fa-solid fa-arrow-right"></i></button>' +
       "</div>" +
     "</div>"
   );
@@ -172,12 +172,12 @@ function prepararBotaoAdicionar() {
     mensagemProduto.classList.remove("sucesso");
 
     if (tamanhoSelecionado === "") {
-      mensagemProduto.textContent = "Selecione um tamanho antes de adicionar ao carrinho.";
+      mensagemProduto.textContent = "Escolha um tamanho antes de adicionar ao carrinho.";
       return;
     }
 
     adicionarAoCarrinho(produtoAtual, tamanhoSelecionado);
-    mensagemProduto.textContent = "Produto adicionado ao carrinho.";
+    mensagemProduto.textContent = "Peça adicionada ao carrinho.";
     mensagemProduto.classList.add("sucesso");
   });
 }

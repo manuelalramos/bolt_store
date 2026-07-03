@@ -61,18 +61,18 @@ formulariosNewsletter.forEach(function (formulario) {
     mensagem.classList.remove("sucesso");
 
     if (email === "") {
-      mensagem.textContent = "Digite seu e-mail.";
+      mensagem.textContent = "Digite seu e-mail para entrar na lista.";
       campoEmail.focus();
       return;
     }
 
     if (!validarEmail(email)) {
-      mensagem.textContent = "Digite um e-mail valido.";
+      mensagem.textContent = "Confira o e-mail e tente de novo.";
       campoEmail.focus();
       return;
     }
 
-    mensagem.textContent = "E-mail cadastrado com sucesso.";
+    mensagem.textContent = "Pronto. Você entrou na lista da Bolt.";
     mensagem.classList.add("sucesso");
     formulario.reset();
   });

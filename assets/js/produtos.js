@@ -25,12 +25,12 @@ function mostrarProdutos() {
   });
 
   if (produtosFiltrados.length === 0) {
-    listaProdutos.innerHTML = '<div class="estado-vazio">Nenhum produto encontrado.</div>';
+    listaProdutos.innerHTML = '<div class="estado-vazio">Nenhuma peça encontrada com esses filtros.</div>';
   } else {
     listaProdutos.innerHTML = produtosFiltrados.map(criarCardProduto).join("");
   }
 
-  quantidadeProdutos.textContent = produtosFiltrados.length + " produto(s) encontrado(s)";
+  quantidadeProdutos.textContent = produtosFiltrados.length + " peça(s) na vitrine";
   prepararAnimacaoScroll();
 }
 

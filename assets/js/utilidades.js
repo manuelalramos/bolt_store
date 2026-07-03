@@ -16,12 +16,20 @@ function montarLinkProduto(id) {
   return caminhoBase() + "pages/produto.html?id=" + id;
 }
 
+function formatarCategoria(categoria) {
+  const categorias = {
+    "Calca jeans": "Calça jeans"
+  };
+
+  return categorias[categoria] || categoria;
+}
+
 async function buscarProdutos() {
   try {
     const resposta = await fetch(API_PRODUTOS);
 
     if (!resposta.ok) {
-      throw new Error("API indisponivel");
+      throw new Error("API indisponível");
     }
 
     const produtosApi = await resposta.json();
@@ -112,13 +120,13 @@ function criarCardProduto(produto) {
         criarVisualProduto(produto) +
       "</a>" +
       '<div class="produto-card-corpo">' +
-        '<p class="produto-meta">' + produto.categoria + " / " + produto.genero + "</p>" +
+        '<p class="produto-meta">' + formatarCategoria(produto.categoria) + " / " + produto.genero + "</p>" +
         "<h3>" + produto.nome + "</h3>" +
         '<div class="produto-card-preco">' +
           '<span class="preco">' + formatarPreco(produto.preco) + "</span>" +
           precoAntigo +
         "</div>" +
-        '<a class="botao" href="' + montarLinkProduto(produto.id) + '">Ver produto <i class="fa-solid fa-arrow-right"></i></a>' +
+        '<a class="botao" href="' + montarLinkProduto(produto.id) + '">Ver detalhes <i class="fa-solid fa-arrow-right"></i></a>' +
       "</div>" +
     "</article>"
   );

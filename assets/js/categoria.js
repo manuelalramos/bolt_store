@@ -22,12 +22,12 @@ function mostrarCategoria() {
   });
 
   if (filtrados.length === 0) {
-    listaCategoria.innerHTML = '<div class="estado-vazio">Nenhum produto encontrado nesse filtro.</div>';
+    listaCategoria.innerHTML = '<div class="estado-vazio">Nenhuma peça dessa categoria apareceu nesse filtro.</div>';
   } else {
     listaCategoria.innerHTML = filtrados.map(criarCardProduto).join("");
   }
 
-  quantidadeCategoria.textContent = filtrados.length + " produto(s)";
+  quantidadeCategoria.textContent = filtrados.length + " peça(s) disponível(is)";
   prepararAnimacaoScroll();
 }
 
