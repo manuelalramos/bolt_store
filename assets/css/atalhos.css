@@ -1,0 +1,44 @@
+.atalhos {
+  padding: 28px 0;
+}
+
+.atalhos-grade {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.atalhos article {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  min-height: 148px;
+  padding: 22px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.atalhos article:hover {
+  background: var(--preto);
+  color: var(--branco);
+  transform: translateY(-5px);
+}
+
+.atalhos i {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.atalhos h2 {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.atalhos p {
+  color: var(--cinza-escuro);
+  font-size: 0.88rem;
+}
+
+.atalhos article:hover p {
+  color: rgba(255, 255, 255, 0.74);
+}
