@@ -39,8 +39,8 @@
     grid-template-columns: 1fr;
   }
 
-  .hero-foto {
-    min-height: 420px;
+  .hero-media {
+    min-height: 340px;
   }
 
   .atalhos-grade,
@@ -90,8 +90,8 @@
     padding-top: 42px;
   }
 
-  .hero-foto {
-    min-height: 320px;
+  .hero-media {
+    min-height: 260px;
   }
 
   .atalhos-grade,
@@ -107,7 +107,7 @@
   }
 
   .produto-foto {
-    min-height: 420px;
+    aspect-ratio: 1;
   }
 
   .filtros-linha input,
@@ -124,6 +124,10 @@
     height: 100px;
   }
 
+  .logo-rodape .logo-imagem {
+    height: 54px;
+  }
+
   .item-acoes {
     grid-column: 1 / 3;
     justify-content: space-between;
@@ -131,8 +135,13 @@
 
   .rodape-final {
     align-items: start;
-    flex-direction: column;
     gap: 10px;
+    grid-template-columns: 1fr;
     padding: 18px;
+  }
+
+  .made-by-final,
+  .voltar-topo {
+    justify-self: start;
   }
 }
