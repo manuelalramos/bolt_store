@@ -13,7 +13,10 @@
   overflow: hidden;
   padding: 22px;
   position: relative;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .categoria-card:hover {

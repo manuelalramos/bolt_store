@@ -55,7 +55,10 @@ img {
   margin-bottom: 34px;
 }
 
-.cabecalho-secao h2, .cabecalho-pagina h1, .hero h1, .categoria-hero h1 {
+.cabecalho-secao h2,
+.cabecalho-pagina h1,
+.hero h1,
+.categoria-hero h1 {
   font-size: clamp(2.4rem, 7vw, 6.5rem);
   font-weight: 700;
   letter-spacing: 0;
@@ -63,7 +66,9 @@ img {
   text-transform: uppercase;
 }
 
-.cabecalho-secao p, .categoria-hero p, .hero-texto p {
+.cabecalho-secao p,
+.categoria-hero p,
+.hero-texto p {
   color: var(--cinza-escuro);
 }
 
@@ -102,7 +107,11 @@ img {
   min-height: 46px;
   padding: 0 22px;
   text-transform: uppercase;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .botao:hover {
@@ -144,7 +153,8 @@ img {
   gap: 12px;
 }
 
-.estado-carregando, .estado-vazio {
+.estado-carregando,
+.estado-vazio {
   background: var(--branco);
   border: 1px solid var(--preto);
   color: var(--cinza-escuro);

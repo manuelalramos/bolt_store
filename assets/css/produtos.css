@@ -16,7 +16,8 @@
   gap: 8px;
 }
 
-.botoes-categoria button, .categoria-filtros button {
+.botoes-categoria button,
+.categoria-filtros button {
   background: var(--branco);
   border: 1px solid var(--preto);
   color: var(--preto);
@@ -25,10 +26,16 @@
   min-height: 38px;
   padding: 0 14px;
   text-transform: uppercase;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.botoes-categoria button.ativo, .botoes-categoria button:hover, .categoria-filtros button.ativo, .categoria-filtros button:hover {
+.botoes-categoria button.ativo,
+.botoes-categoria button:hover,
+.categoria-filtros button.ativo,
+.categoria-filtros button:hover {
   background: var(--vermelho);
   border-color: var(--vermelho);
   color: var(--branco);
@@ -68,7 +75,9 @@
   border: 1px solid var(--preto);
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .produto-card:hover {

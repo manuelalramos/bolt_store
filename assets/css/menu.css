@@ -81,11 +81,13 @@
   width: 100%;
 }
 
-.menu a:hover::after, .menu a.ativo::after {
+.menu a:hover::after,
+.menu a.ativo::after {
   transform: scaleX(1);
 }
 
-.menu a:hover, .menu a.ativo {
+.menu a:hover,
+.menu a.ativo {
   color: var(--vermelho);
 }
 
@@ -97,7 +99,9 @@
   height: 42px;
   justify-content: center;
   position: relative;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
   width: 42px;
 }
 
@@ -105,7 +109,8 @@
   font-size: 1rem;
 }
 
-.link-carrinho:hover, .link-carrinho.ativo {
+.link-carrinho:hover,
+.link-carrinho.ativo {
   background: var(--preto);
   color: var(--branco);
 }
@@ -137,7 +142,8 @@
   width: 42px;
 }
 
-.botao-menu.ativo, .botao-menu:hover {
+.botao-menu.ativo,
+.botao-menu:hover {
   background: var(--preto);
   color: var(--branco);
 }

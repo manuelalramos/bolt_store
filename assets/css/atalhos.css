@@ -13,7 +13,10 @@
   border: 1px solid var(--preto);
   min-height: 148px;
   padding: 22px;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .atalhos article:hover {
