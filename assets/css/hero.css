@@ -7,7 +7,7 @@
   align-items: stretch;
   display: grid;
   gap: 28px;
-  grid-template-columns: 0.88fr 1.12fr;
+  grid-template-columns: 1fr 0.82fr;
 }
 
 .hero-texto {
@@ -26,8 +26,21 @@
   max-width: 520px;
 }
 
-.hero-foto {
+.hero-media {
   background: var(--gelo);
-  border: 1px solid var(--preto);
-  min-height: 540px;
+  display: block;
+  margin: 0;
+  min-height: 430px;
+  overflow: hidden;
+}
+
+.hero-imagem {
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-imagem:not([src]) {
+  visibility: hidden;
 }
