@@ -1,0 +1,125 @@
+.produto-pagina {
+  padding: 64px 0 78px;
+}
+
+.produto-layout {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1.05fr 0.95fr;
+}
+
+.produto-foto {
+  align-items: end;
+  background: var(--gelo);
+  border: 1px solid var(--preto);
+  display: flex;
+  min-height: 680px;
+  overflow: hidden;
+  padding: 34px;
+  position: relative;
+}
+
+.produto-info {
+  align-self: start;
+  padding-top: 12px;
+}
+
+.produto-info h1 {
+  font-size: clamp(2rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  margin: 10px 0 12px;
+  text-transform: uppercase;
+}
+
+.produto-info .descricao {
+  color: var(--cinza-escuro);
+  margin: 18px 0 28px;
+  max-width: 560px;
+}
+
+.produto-precos {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.opcoes-bloco {
+  margin-bottom: 24px;
+}
+
+.opcoes-bloco > p {
+  color: var(--cinza-escuro);
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.opcoes-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.botao-tamanho {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  color: var(--preto);
+  font-size: 0.78rem;
+  font-weight: 700;
+  min-height: 44px;
+  min-width: 52px;
+  padding: 0 14px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.botao-tamanho.ativo,
+.botao-tamanho:hover {
+  background: var(--preto);
+  color: var(--branco);
+  transform: translateY(-2px);
+}
+
+.mensagem-produto {
+  color: var(--vermelho);
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-height: 26px;
+  padding-top: 12px;
+}
+
+.mensagem-produto.sucesso {
+  color: #0b7a2a;
+}
+
+.produto-detalhes {
+  border-top: 1px solid var(--cinza);
+  margin-top: 28px;
+}
+
+.produto-detalhes details {
+  border-bottom: 1px solid var(--cinza);
+  padding: 18px 0;
+}
+
+.produto-detalhes summary {
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.produto-detalhes p {
+  color: var(--cinza-escuro);
+  font-size: 0.92rem;
+  padding-top: 12px;
+}
+
+.recomendados {
+  background: var(--gelo);
+}
+
+.produtos-grade-menor {
+  grid-template-columns: repeat(4, 1fr);
+}
