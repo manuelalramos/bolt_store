@@ -3,6 +3,7 @@ const areaRelacionados = document.querySelector("#produtos-relacionados");
 
 let produtoAtual = null;
 let tamanhoSelecionado = "";
+let imagemSelecionada = 0;
 
 async function iniciarPaginaProduto() {
   const parametros = new URLSearchParams(window.location.search);
@@ -25,12 +26,15 @@ async function iniciarPaginaProduto() {
 }
 
 function mostrarProduto(produto) {
+  tamanhoSelecionado = "";
+  imagemSelecionada = 0;
+
   const precoAntigo = produto.precoAntigo > 0
     ? '<span class="preco-antigo">' + formatarPreco(produto.precoAntigo) + "</span>"
     : "";
 
   areaProduto.innerHTML =
-    '<div class="produto-foto" data-animar aria-label="Espaco para foto do produto"></div>' +
+    criarGaleriaProduto(produto) +
     '<article class="produto-info" data-animar>' +
       '<p class="produto-meta">' + produto.categoria + " / " + produto.genero + "</p>" +
       "<h1>" + produto.nome + "</h1>" +
@@ -62,7 +66,82 @@ function mostrarProduto(produto) {
     "</article>";
 
   criarBotoesTamanho(produto);
+  prepararGaleriaProduto(produto);
   prepararBotaoAdicionar();
+}
+
+function criarGaleriaProduto(produto) {
+  const imagens = obterImagensProduto(produto);
+  const imagemPrincipal = imagens[0];
+  const classeFoto = "produto-foto" + (imagemPrincipal.src ? "" : " imagem-pendente");
+
+  const miniaturas = imagens.map(function (imagem, indice) {
+    const classeMiniatura = "produto-miniatura" +
+      (indice === 0 ? " ativo" : "") +
+      (imagem.src ? "" : " imagem-pendente");
+
+    return (
+      '<button type="button" class="' + classeMiniatura + '" data-imagem-indice="' + indice + '" aria-label="Ver ' + escaparAtributo(imagem.alt) + '">' +
+        criarTagImagem(imagem, "produto-miniatura-imagem", "lazy") +
+      "</button>"
+    );
+  }).join("");
+
+  return (
+    '<div class="produto-galeria" data-animar>' +
+      '<div class="' + classeFoto + '">' +
+        criarTagImagem(imagemPrincipal, "produto-imagem-principal", "eager") +
+      "</div>" +
+      '<div class="produto-galeria-controles" aria-label="Galeria de imagens do produto">' +
+        '<button type="button" data-galeria="anterior" aria-label="Imagem anterior"><i class="fa-solid fa-arrow-left"></i></button>' +
+        '<div class="produto-miniaturas">' + miniaturas + "</div>" +
+        '<button type="button" data-galeria="proxima" aria-label="Proxima imagem"><i class="fa-solid fa-arrow-right"></i></button>' +
+      "</div>" +
+    "</div>"
+  );
+}
+
+function prepararGaleriaProduto(produto) {
+  const imagens = obterImagensProduto(produto);
+  const foto = document.querySelector(".produto-foto");
+  const imagemPrincipal = document.querySelector(".produto-imagem-principal");
+  const miniaturas = document.querySelectorAll("[data-imagem-indice]");
+  const botaoAnterior = document.querySelector("[data-galeria='anterior']");
+  const botaoProxima = document.querySelector("[data-galeria='proxima']");
+
+  function atualizarGaleria(indice) {
+    imagemSelecionada = (indice + imagens.length) % imagens.length;
+    const imagem = imagens[imagemSelecionada];
+    const caminho = resolverCaminhoImagem(imagem.src);
+
+    if (caminho) {
+      imagemPrincipal.setAttribute("src", caminho);
+    } else {
+      imagemPrincipal.removeAttribute("src");
+    }
+
+    imagemPrincipal.setAttribute("alt", imagem.alt);
+    foto.classList.toggle("imagem-pendente", !imagem.src);
+
+    miniaturas.forEach(function (miniatura) {
+      const estaAtiva = Number(miniatura.dataset.imagemIndice) === imagemSelecionada;
+      miniatura.classList.toggle("ativo", estaAtiva);
+    });
+  }
+
+  miniaturas.forEach(function (miniatura) {
+    miniatura.addEventListener("click", function () {
+      atualizarGaleria(Number(miniatura.dataset.imagemIndice));
+    });
+  });
+
+  botaoAnterior.addEventListener("click", function () {
+    atualizarGaleria(imagemSelecionada - 1);
+  });
+
+  botaoProxima.addEventListener("click", function () {
+    atualizarGaleria(imagemSelecionada + 1);
+  });
 }
 
 function criarBotoesTamanho(produto) {

@@ -24,7 +24,15 @@ async function buscarProdutos() {
       throw new Error("API indisponivel");
     }
 
-    return await resposta.json();
+    const produtosApi = await resposta.json();
+
+    if (!produtosApi.every(function (produto) {
+      return Array.isArray(produto.imagens) && produto.imagens.length >= 3;
+    })) {
+      throw new Error("API sem imagens cadastradas");
+    }
+
+    return produtosApi;
   } catch (erro) {
     const respostaLocal = await fetch(caminhoBase() + "dbTeste.json");
     const banco = await respostaLocal.json();
@@ -32,9 +40,64 @@ async function buscarProdutos() {
   }
 }
 
+function escaparAtributo(valor) {
+  return String(valor)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function resolverCaminhoImagem(caminho) {
+  if (!caminho) {
+    return "";
+  }
+
+  if (/^(https?:|data:|blob:|\/)/.test(caminho)) {
+    return caminho;
+  }
+
+  if (caminho.indexOf("./") === 0) {
+    return caminhoBase() + caminho.slice(2);
+  }
+
+  if (caminho.indexOf("../") === 0) {
+    return caminho;
+  }
+
+  return caminhoBase() + caminho;
+}
+
+function obterImagensProduto(produto) {
+  const imagens = Array.isArray(produto.imagens) ? produto.imagens : [];
+
+  return [0, 1, 2].map(function (indice) {
+    const imagem = imagens[indice] || {};
+
+    return {
+      src: typeof imagem === "string" ? imagem : imagem.src || "",
+      alt: imagem.alt || produto.nome + " - foto " + (indice + 1)
+    };
+  });
+}
+
+function criarTagImagem(imagem, classe, loading) {
+  const caminho = resolverCaminhoImagem(imagem.src);
+  const atributoSrc = caminho ? ' src="' + escaparAtributo(caminho) + '"' : "";
+  const atributoClasse = classe ? ' class="' + classe + '"' : "";
+  const atributoLoading = loading ? ' loading="' + loading + '"' : "";
+
+  return '<img' + atributoClasse + atributoSrc + ' alt="' + escaparAtributo(imagem.alt) + '"' + atributoLoading + ">";
+}
+
 function criarVisualProduto(produto) {
+  const imagem = obterImagensProduto(produto)[0];
+  const classe = "produto-card-visual" + (imagem.src ? "" : " imagem-pendente");
+
   return (
-    '<div class="produto-card-visual" aria-label="Espaco para foto de ' + produto.nome + '"></div>'
+    '<div class="' + classe + '">' +
+      criarTagImagem(imagem, "produto-card-imagem", "lazy") +
+    "</div>"
   );
 }
 
@@ -77,7 +140,11 @@ function lerCarrinho() {
       categoria: item.categoria || "Produto",
       preco: item.preco,
       tamanho: item.tamanho,
-      quantidade: item.quantidade
+      quantidade: item.quantidade,
+      imagem: item.imagem || {
+        src: "",
+        alt: item.nome + " - foto do produto"
+      }
     };
   });
 }
@@ -103,7 +170,8 @@ function adicionarAoCarrinho(produto, tamanho) {
       categoria: produto.categoria,
       preco: produto.preco,
       tamanho: tamanho,
-      quantidade: 1
+      quantidade: 1,
+      imagem: obterImagensProduto(produto)[0]
     });
   }
 
