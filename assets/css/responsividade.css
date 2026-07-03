@@ -1,0 +1,138 @@
+@media (max-width: 1040px) {
+  .cabecalho-conteudo {
+    gap: 16px;
+  }
+
+  .botao-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    background: var(--branco);
+    border-bottom: 1px solid var(--preto);
+    border-top: 1px solid var(--preto);
+    box-shadow: var(--sombra);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    left: 0;
+    margin: 0;
+    padding: 12px 24px 18px;
+    position: absolute;
+    right: 0;
+    top: 76px;
+  }
+
+  .menu.ativo {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 13px 0;
+  }
+
+  .hero-conteudo,
+  .produto-layout,
+  .carrinho-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-foto {
+    min-height: 420px;
+  }
+
+  .atalhos-grade,
+  .produtos-grade,
+  .produtos-grade-menor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filtros-produtos {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filtros-linha {
+    flex-wrap: wrap;
+  }
+
+  .resumo-carrinho {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .secao {
+    padding: 60px 0;
+  }
+
+  .cabecalho-secao,
+  .categoria-filtros,
+  .oferta-caixa {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .barra-aviso {
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .hero {
+    padding-top: 42px;
+  }
+
+  .hero-foto {
+    min-height: 320px;
+  }
+
+  .atalhos-grade,
+  .categorias-grade,
+  .produtos-grade,
+  .produtos-grade-menor,
+  .rodape-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .categoria-card {
+    min-height: 210px;
+  }
+
+  .produto-foto {
+    min-height: 420px;
+  }
+
+  .filtros-linha input,
+  .filtros-linha select {
+    width: 100%;
+  }
+
+  .item-carrinho {
+    align-items: start;
+    grid-template-columns: 88px 1fr;
+  }
+
+  .item-visual {
+    height: 100px;
+  }
+
+  .item-acoes {
+    grid-column: 1 / 3;
+    justify-content: space-between;
+  }
+
+  .rodape-final {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px;
+  }
+}
