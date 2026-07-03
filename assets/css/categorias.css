@@ -1,0 +1,35 @@
+.categoria-hero {
+  background: var(--preto);
+  color: var(--branco);
+  padding: 88px 0;
+}
+
+.categoria-hero-conteudo {
+  max-width: 880px;
+}
+
+.categoria-hero p:not(.etiqueta) {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  margin-top: 18px;
+}
+
+.categoria-filtros {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.categoria-filtros > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.categoria-filtros p {
+  color: var(--cinza-escuro);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
