@@ -19,23 +19,24 @@
     <script src="./assets/js/produtos.js" defer></script>
 
     <link rel="icon" type="image/svg+xml" href="./assets/media/icon_aba.svg"/>
+
   </head>
   <body>
-    <div>
+    <div class="barra-aviso">
       <p>DROP NOVO DISPONIVEL</p>
-      <a href="#produtos">Comprar agora <i></i></a>
+      <a href="#produtos">Comprar agora <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
-    <header>
-      <div>
-        <a href="./index.html" aria-label="Pagina inicial da Bolt"><img src="./assets/media/logo_menu.svg" alt="Bolt Store" /></a>
+    <header class="cabecalho" id="inicio">
+      <div class="container cabecalho-conteudo">
+        <a class="logo" href="./index.html" aria-label="Pagina inicial da Bolt"><img class="logo-imagem" src="./assets/media/logo_menu.svg" alt="Bolt Store" /></a>
 
-        <button aria-label="Abrir menu" aria-expanded="false">
-          <i></i>
+        <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
         </button>
 
-        <nav>
-          <a href="./index.html">Home</a>
+        <nav class="menu" id="menu">
+          <a class="ativo" href="./index.html">Home</a>
           <a href="./pages/camisetas.html">Camisetas</a>
           <a href="./pages/calcas.html">Calcas</a>
           <a href="./pages/regatas.html">Regatas</a>
@@ -44,145 +45,145 @@
           <a href="./pages/shorts.html">Shorts</a>
         </nav>
 
-        <a href="./pages/carrinho.html" aria-label="Abrir carrinho">
-          <i></i>
-          <span>0</span>
+        <a class="link-carrinho" href="./pages/carrinho.html" aria-label="Abrir carrinho">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span data-contador-carrinho>0</span>
         </a>
       </div>
     </header>
 
     <main>
-      <section>
-        <div>
-          <div>
-            <p>new drop</p>
-            <img src="./assets/media/logo_menu.svg" alt="Bolt Store" />
+      <section class="hero">
+        <div class="container hero-conteudo">
+          <div class="hero-texto" data-animar>
+            <p class="etiqueta">new drop</p>
+            <img class="hero-logo" src="./assets/media/logo_menu.svg" alt="Bolt Store" />
             <p>Moda teen em preto, branco e vermelho para montar look rapido, direto e urbano.</p>
-            <div>
-              <a href="#produtos">Ver produtos <i></i></a>
-              <a href="./pages/camisetas.html">Abrir camisetas</a>
+            <div class="grupo-botoes">
+              <a class="botao" href="#produtos">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+              <a class="botao botao-secundario" href="./pages/camisetas.html">Abrir camisetas</a>
             </div>
           </div>
 
-          <div aria-label="Espaco para foto principal da loja"></div>
+          <div class="hero-foto" data-animar aria-label="Espaco para foto principal da loja"></div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <article>
-            <i></i>
+      <section class="atalhos">
+        <div class="container atalhos-grade">
+          <article data-animar>
+            <i class="fa-solid fa-truck-fast"></i>
             <h2>Entrega</h2>
             <p>Envio para todo o Brasil.</p>
           </article>
-          <article>
-            <i></i>
+          <article data-animar>
+            <i class="fa-solid fa-rotate-left"></i>
             <h2>Troca</h2>
             <p>Troca simples de tamanho.</p>
           </article>
-          <article>
-            <i></i>
+          <article data-animar>
+            <i class="fa-solid fa-credit-card"></i>
             <h2>Pagamento</h2>
             <p>Resumo antes de finalizar.</p>
           </article>
-          <article>
-            <i></i>
+          <article data-animar>
+            <i class="fa-solid fa-shirt"></i>
             <h2>Look</h2>
             <p>Pecas faceis de combinar.</p>
           </article>
         </div>
       </section>
 
-      <section>
-        <div>
-          <div>
+      <section class="secao" id="categorias">
+        <div class="container">
+          <div class="cabecalho-secao" data-animar>
             <div>
-              <p>categorias</p>
+              <p class="etiqueta">categorias</p>
               <h2>Escolha sua pagina</h2>
             </div>
             <p>Cada categoria tem pagina propria com filtro masculino e feminino.</p>
           </div>
 
-          <div>
-            <a href="./pages/moletons.html">
-              <i></i>
+          <div class="categorias-grade">
+            <a class="categoria-card" href="./pages/moletons.html" data-animar>
+              <i class="fa-solid fa-shirt"></i>
               <span>Moletom</span>
             </a>
-            <a href="./pages/calcas.html">
-              <i></i>
+            <a class="categoria-card" href="./pages/calcas.html" data-animar>
+              <i class="fa-solid fa-person"></i>
               <span>Calca jeans</span>
             </a>
-            <a href="./pages/camisetas.html">
-              <i></i>
+            <a class="categoria-card" href="./pages/camisetas.html" data-animar>
+              <i class="fa-solid fa-shirt"></i>
               <span>Camiseta</span>
             </a>
-            <a href="./pages/regatas.html">
-              <i></i>
+            <a class="categoria-card" href="./pages/regatas.html" data-animar>
+              <i class="fa-solid fa-bolt"></i>
               <span>Regata</span>
             </a>
-            <a href="./pages/tops.html">
-              <i></i>
+            <a class="categoria-card" href="./pages/tops.html" data-animar>
+              <i class="fa-solid fa-star"></i>
               <span>Tops</span>
             </a>
-            <a href="./pages/shorts.html">
-              <i></i>
+            <a class="categoria-card" href="./pages/shorts.html" data-animar>
+              <i class="fa-solid fa-person-running"></i>
               <span>Shorts</span>
             </a>
           </div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <p>final offer</p>
+      <section class="secao faixa-oferta" id="ofertas">
+        <div class="container oferta-caixa" data-animar>
+          <p class="etiqueta etiqueta-clara">final offer</p>
           <h2>Preto, branco e vermelho. Sem enrolacao.</h2>
-          <a href="#produtos">Ver vitrine <i></i></a>
+          <a class="botao botao-claro" href="#produtos">Ver vitrine <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </section>
 
-      <section>
-        <div>
-          <div>
+      <section class="secao produtos-secao" id="produtos">
+        <div class="container">
+          <div class="cabecalho-secao" data-animar>
             <div>
-              <p>shop</p>
+              <p class="etiqueta">shop</p>
               <h2>Todos os produtos</h2>
             </div>
-            <p>Carregando produtos...</p>
+            <p id="quantidade-produtos">Carregando produtos...</p>
           </div>
 
-          <div>
-            <div>
-              <button>Todos</button>
-              <button>Moletom</button>
-              <button>Calcas</button>
-              <button>Camisetas</button>
-              <button>Regatas</button>
-              <button>Tops</button>
-              <button>Shorts</button>
+          <div class="filtros-produtos" data-animar>
+            <div class="botoes-categoria">
+              <button class="ativo" data-categoria="Todos">Todos</button>
+              <button data-categoria="Moletom">Moletom</button>
+              <button data-categoria="Calca jeans">Calcas</button>
+              <button data-categoria="Camiseta">Camisetas</button>
+              <button data-categoria="Regata">Regatas</button>
+              <button data-categoria="Top">Tops</button>
+              <button data-categoria="Shorts">Shorts</button>
             </div>
 
-            <div>
+            <div class="filtros-linha">
               <label for="filtro-genero">Genero</label>
-              <select>
+              <select id="filtro-genero">
                 <option value="Todos">Todos</option>
                 <option value="Feminino">Feminino</option>
                 <option value="Masculino">Masculino</option>
               </select>
 
               <label for="campo-busca">Busca</label>
-              <input type="search" placeholder="Nome do produto" />
+              <input id="campo-busca" type="search" placeholder="Nome do produto" />
             </div>
           </div>
 
-          <div></div>
+          <div class="produtos-grade" id="lista-produtos"></div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="rodape">
+      <div class="container rodape-grade">
         <div>
-          <a href="./index.html"><img src="./assets/media/logo_menu.svg" alt="Bolt Store" /></a>
+          <a class="logo logo-rodape" href="./index.html"><img class="logo-imagem" src="./assets/media/logo_menu.svg" alt="Bolt Store" /></a>
           <p>Loja virtual teen feita com JavaScript puro, HTML semantico e JSON Server.</p>
         </div>
         <nav aria-label="Navegacao do rodape">
@@ -196,25 +197,25 @@
         <div>
           <h2>Newsletter</h2>
           <p>Receba novidades da Bolt no seu e-mail.</p>
-          <form novalidate>
+          <form class="newsletter" data-newsletter-form novalidate>
             <label for="newsletter-email">E-mail</label>
             <div>
-              <input name="email" type="email" placeholder="seuemail@email.com" />
+              <input id="newsletter-email" name="email" type="email" placeholder="seuemail@email.com" />
               <button type="submit" aria-label="Enviar newsletter">
-                <i></i>
+                <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
-            <span></span>
+            <span data-newsletter-mensagem></span>
           </form>
         </div>
       </div>
-      <div>
-        <p>&copy; <span></span> Bolt Store. Todos os direitos reservados.</p>
-        <a href="https://manuelalramos.com.br" target="_blank" rel="noopener">
+      <div class="container rodape-final">
+        <p>&copy; <span id="ano"></span> Bolt Store. Todos os direitos reservados.</p>
+        <a class="made-by made-by-final" href="https://manuelalramos.com.br" target="_blank" rel="noopener">
           Made by
           <img src="./assets/media/icon_manuela.svg" alt="Manuela Ramos" />
         </a>
-        <a href="#inicio">Voltar ao topo <i></i></a>
+        <a href="#inicio" class="voltar-topo">Voltar ao topo <i class="fa-solid fa-arrow-up"></i></a>
       </div>
     </footer>
   </body>
