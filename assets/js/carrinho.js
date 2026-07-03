@@ -29,9 +29,17 @@ function mostrarCarrinho() {
 }
 
 function criarItemCarrinho(item) {
+  const imagem = item.imagem || {
+    src: "",
+    alt: item.nome + " - foto do produto"
+  };
+  const classeVisual = "item-visual" + (imagem.src ? "" : " imagem-pendente");
+
   return (
     '<article class="item-carrinho" data-animar>' +
-      '<div class="item-visual" aria-label="Espaco para foto do produto"></div>' +
+      '<div class="' + classeVisual + '">' +
+        criarTagImagem(imagem, "item-imagem", "lazy") +
+      "</div>" +
       "<div>" +
         "<h2>" + item.nome + "</h2>" +
         "<p>Tamanho: " + item.tamanho + "</p>" +
