@@ -86,14 +86,24 @@
 }
 
 .produto-card-visual {
+  aspect-ratio: 4 / 5;
   background: var(--gelo);
   border-bottom: 1px solid var(--preto);
-  min-height: 300px;
   overflow: hidden;
 }
 
 .produto-card:hover .produto-card-visual {
   background: var(--cinza);
+}
+
+.produto-card-imagem {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.produto-card-imagem:not([src]) {
+  visibility: hidden;
 }
 
 .produto-card-corpo {
