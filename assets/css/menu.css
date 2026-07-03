@@ -1,0 +1,143 @@
+.barra-aviso {
+  align-items: center;
+  background: var(--preto);
+  color: var(--branco);
+  display: flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 22px;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.barra-aviso a {
+  align-items: center;
+  color: var(--vermelho);
+  display: inline-flex;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.barra-aviso a:hover {
+  color: var(--branco);
+}
+
+.cabecalho {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--cinza);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.cabecalho-conteudo {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  min-height: 76px;
+}
+
+.logo {
+  background: transparent;
+  color: var(--preto);
+  display: inline-flex;
+  line-height: 0;
+}
+
+.logo-imagem {
+  display: block;
+  height: 42px;
+  object-fit: contain;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  gap: clamp(16px, 2.4vw, 32px);
+  margin: 0 auto;
+}
+
+.menu a {
+  color: var(--preto);
+  font-size: 0.76rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu a::after {
+  background: var(--vermelho);
+  bottom: -9px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.menu a:hover::after, .menu a.ativo::after {
+  transform: scaleX(1);
+}
+
+.menu a:hover, .menu a.ativo {
+  color: var(--vermelho);
+}
+
+.link-carrinho {
+  align-items: center;
+  border: 1px solid var(--preto);
+  color: var(--preto);
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  position: relative;
+  transition: background 0.2s ease, color 0.2s ease;
+  width: 42px;
+}
+
+.link-carrinho i {
+  font-size: 1rem;
+}
+
+.link-carrinho:hover, .link-carrinho.ativo {
+  background: var(--preto);
+  color: var(--branco);
+}
+
+.link-carrinho span {
+  align-items: center;
+  background: var(--vermelho);
+  border: 2px solid var(--branco);
+  border-radius: 50%;
+  color: var(--branco);
+  display: inline-flex;
+  font-size: 0.68rem;
+  font-weight: 700;
+  height: 22px;
+  justify-content: center;
+  min-width: 22px;
+  position: absolute;
+  right: -11px;
+  top: -11px;
+}
+
+.botao-menu {
+  background: var(--branco);
+  border: 1px solid var(--preto);
+  color: var(--preto);
+  display: none;
+  height: 42px;
+  margin-left: auto;
+  width: 42px;
+}
+
+.botao-menu.ativo, .botao-menu:hover {
+  background: var(--preto);
+  color: var(--branco);
+}
