@@ -60,3 +60,68 @@ function criarCardProduto(produto) {
     "</article>"
   );
 }
+
+const NOME_CARRINHO = "boltCarrinho";
+
+function lerCarrinho() {
+  const carrinhoSalvo = localStorage.getItem(NOME_CARRINHO);
+
+  if (!carrinhoSalvo) {
+    return [];
+  }
+
+  return JSON.parse(carrinhoSalvo).map(function (item) {
+    return {
+      id: item.id,
+      nome: item.nome,
+      categoria: item.categoria || "Produto",
+      preco: item.preco,
+      tamanho: item.tamanho,
+      quantidade: item.quantidade
+    };
+  });
+}
+
+function salvarCarrinho(carrinho) {
+  localStorage.setItem(NOME_CARRINHO, JSON.stringify(carrinho));
+  atualizarQuantidadeCarrinho();
+}
+
+function adicionarAoCarrinho(produto, tamanho) {
+  const carrinho = lerCarrinho();
+
+  const itemExistente = carrinho.find(function (item) {
+    return item.id === produto.id && item.tamanho === tamanho;
+  });
+
+  if (itemExistente) {
+    itemExistente.quantidade += 1;
+  } else {
+    carrinho.push({
+      id: produto.id,
+      nome: produto.nome,
+      categoria: produto.categoria,
+      preco: produto.preco,
+      tamanho: tamanho,
+      quantidade: 1
+    });
+  }
+
+  salvarCarrinho(carrinho);
+}
+
+function atualizarQuantidadeCarrinho() {
+  const contadores = document.querySelectorAll("[data-contador-carrinho]");
+  const carrinho = lerCarrinho();
+  let quantidadeTotal = 0;
+
+  carrinho.forEach(function (item) {
+    quantidadeTotal += item.quantidade;
+  });
+
+  contadores.forEach(function (contador) {
+    contador.textContent = quantidadeTotal;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", atualizarQuantidadeCarrinho);
